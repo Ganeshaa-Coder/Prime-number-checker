@@ -12,8 +12,8 @@ def is_prime(n):
     return True
 
 
-number = int(input("Enter a number: "))
-if is_prime(number):
-    print(f"{number} is a prime number.")
-else:
-    print(f"{number} is not a prime number.")
+# Iterate through numbers from 10 to 1000 and check for primality
+print("Prime numbers between 10 and 1000:")
+for number in range(10, 1001):
+    if is_prime(number):
+        print(f"{number} is a prime number.")
